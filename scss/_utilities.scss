@@ -1,0 +1,25 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+$primaryFontFamily: 'poppins' , sans-serif;
+$primaryColor: #ff3967;
+$seconderyColor: #03d2bd;
+$lightColor: #fff;
+$darkColor: #000;
+
+body{
+    color: #262626;
+    font-size: 16px;
+    font-family: $primaryFontFamily;
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: $primaryFontFamily;
+    margin: 0 0 15px;
+}
+p{
+    font-family: $primaryFontFamily;
+    margin: 0 0 15px; 
+}

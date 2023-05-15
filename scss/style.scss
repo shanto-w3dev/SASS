@@ -1,0 +1,33 @@
+// Utilities
+@import "utilities";
+
+// Service
+@import "service";
+
+// Mixin
+@import "mixin";
+
+// Extend
+#cta3{
+    @extend #cta;
+    background: lighten($color: aqua, $amount: 10%);
+}
+// Functions
+@function setTextColor($color){
+    @if(lightness($color) > 75){
+        @return #333;
+    }@else{
+        @return #fff;
+    }
+}
+@mixin setBackroundColor($color){
+    background: $color;
+    color: setTextColor($lightColor);
+}
+#cta4{
+    @extend #cta2;
+    @include setBackroundColor($lightColor);
+    h1{
+        color: setTextColor($lightColor);
+    }
+}
